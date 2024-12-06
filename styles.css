@@ -62,3 +62,47 @@ body {
     text-align: center;
     height: 6rem; 
 }
+
+
+/* Adivice button styling */
+
+.advice-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 160px;
+    background: transparent;
+    border: 1px solid #141211;
+    font-family: "Antic Didone", serif;
+    font-size: 20px;
+    color: #141211;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+    border-radius: 25px;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.advice-button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #141211;
+    transition: all 200ms ease-in-out;
+    opacity: 0;
+    border-radius: 36px;
+  }
+
+  .advice-button:hover::before {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    opacity: 1;
+  }
+
+  .advice-button:active {
+    transform: scale(0.95);
+  }
