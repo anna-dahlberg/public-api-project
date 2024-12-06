@@ -124,7 +124,7 @@ body {
     cursor: pointer;
  }
 
- .theCard:hover{
+ .theCard.isFlipped {
     transform: rotateY(180deg);
  }
 
