@@ -1,0 +1,31 @@
+:root {
+    --inkBlack: #1e1e1e;
+    --coralPink: #f45d80;
+    --sunsetOrange: #ffa63a;
+    --soBlue: #74e1fc;  
+}
+
+@font-face {
+    font-family: 'Great Warrior' ;
+    src: url(assets/fonts/great_warrior/GreatWarrior.ttf);
+}
+
+@font-face {
+    font-family: 'Lostar' ;
+    src: url(assets/fonts/lostar/Lostar.ttf);
+}
+
+@font-face {
+    font-family: 'Tango';
+    src: url(assets/fonts/tango_2/Tango.ttf);
+}
+
+@font-face {
+    font-family: 'MartinDemo' ;
+    src: url(assets/fonts/martin/MartinDemo.ttf);
+}
+
+@font-face {
+    font-family: 'Charley' ;
+    src: url(assets/fonts/CHARLEY.otf);
+}
