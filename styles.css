@@ -3,7 +3,8 @@
     --coralPink: #f45d80;
     --sunsetOrange: #ffa63a;
     --soBlue: #74e1fc;
-    --warmWhite: #fffbf2;  
+    --warmWhite: #fef8ea; 
+    --warmerWhite: #f9efd7;
 }
 
 
@@ -44,11 +45,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('/assets/images/Gradient-5.jpg'); 
+    background-image: url('/assets/images/file.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center center; 
-    height: 150vh; 
+    height: 100vh; 
     color: var(--inkBlack);
 }
 
@@ -63,7 +64,7 @@ body {
 }
 
 .advice-section {
-    height: 150vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,6 +78,10 @@ body {
 
 .advice p {
     padding: 1rem;
+}
+
+a {
+    color: var(--inkBlack);
 }
 
 
@@ -122,6 +127,12 @@ body {
     transform: scale(0.95);
   }
 
+  .advice-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
    /* Card styling */
 
  .mainContainer {
@@ -158,8 +169,12 @@ body {
     }
 
     .theCardFront img {
-        width: 65px; 
-        height: 65px;
+        width: 85px; 
+        height: 85px;
+    }
+
+    .sunDark {
+        display: none;
     }
     
  .theCardBack {
@@ -169,8 +184,40 @@ body {
  .theCardBack, .advice {
     display: flex;
     align-items: center;
+    justify-content: center;
  }
     
  .theCard.isFlipped {
     transform: rotateY(180deg);
     }
+
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-image: url(/assets/images/Gradient-3.jpg);
+        }
+
+        .theCardFront, .theCardBack {
+            background-color: var(--inkBlack);
+        }
+
+        .sunDark {
+            display: block;
+        }
+
+        .sunLight{
+
+            display: none;
+        }
+
+        .advice p {
+            color: var(--warmWhite);
+        }
+
+        .advice-button {
+            border: 1.5px solid var(--inkBlack);
+            font-weight: 600;
+        }
+
+
+    } 
