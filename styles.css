@@ -29,3 +29,14 @@
     font-family: 'Charley' ;
     src: url(assets/fonts/CHARLEY.otf);
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/images/Gradient-5.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    height: 150vh; 
+    color: var(--inkBlack);
+}
