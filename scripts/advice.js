@@ -1,6 +1,7 @@
 const url = 'https://api.adviceslip.com/advice'
 
-const button = document.querySelector(".advice-button");
+const button = document.querySelector('.advice-button');
+const card = document.querySelector('.theCard');
 
 const getAdvice = async () => {
     const response = await fetch(url);
@@ -13,8 +14,8 @@ const getAdvice = async () => {
     const printAdvice = document.createElement("p");
     printAdvice.innerText = advice.slip.advice;
     adviceContainer.appendChild(printAdvice);
+    card.classList.toggle('isFlipped');
 };
-
 
 button.addEventListener("click", function() {
     getAdvice();
