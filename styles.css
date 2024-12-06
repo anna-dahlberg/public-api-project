@@ -40,3 +40,25 @@ body {
     height: 150vh; 
     color: var(--inkBlack);
 }
+
+
+.header {
+    font-family: 'Great Warrior';
+    font-size: clamp(40px, calc(60px + 60 * ((100vw - 320px) / 880)), 90px);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.advice-section {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advice {
+    font-size: clamp(15px, calc(20px + 15 * ((100vw - 320px) / 880)), 30px);
+    font-family: 'Antic Didone';
+    text-align: center;
+    height: 6rem; 
+}
