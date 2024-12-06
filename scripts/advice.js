@@ -4,6 +4,9 @@ const button = document.querySelector('.advice-button');
 const card = document.querySelector('.theCard');
 
 const getAdvice = async () => {
+
+    button.disabled = true; 
+
     const response = await fetch(url);
     const advice = await response.json();
     
@@ -14,7 +17,13 @@ const getAdvice = async () => {
     const printAdvice = document.createElement("p");
     printAdvice.innerText = advice.slip.advice;
     adviceContainer.appendChild(printAdvice);
+
     card.classList.toggle('isFlipped');
+
+    setTimeout(() => {
+        card.classList.toggle('isFlipped');
+        button.disabled = false; 
+    }, 5000);
 };
 
 button.addEventListener("click", function() {
