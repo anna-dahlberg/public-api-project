@@ -1,5 +1,6 @@
 :root {
     --inkBlack: #1e1e1e;
+    --darkGrey: #2e2e2e;
     --coralPink: #f45d80;
     --sunsetOrange: #ffa63a;
     --soBlue: #74e1fc;
@@ -198,7 +199,8 @@ a {
         }
 
         .theCardFront, .theCardBack {
-            background-color: var(--inkBlack);
+            background-color: var(--darkGrey);
+            border: 1px solid var(--darkGrey);
         }
 
         .sunDark {
