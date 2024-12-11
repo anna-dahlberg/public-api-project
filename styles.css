@@ -34,12 +34,14 @@ body {
 
 .header {
     font-family: 'Great Warrior';
-    font-size: clamp(40px, calc(60px + 60 * ((100vw - 320px) / 880)), 90px);
+    font-size: clamp(35px, 6vw, 90px);
     text-align: center;
     text-transform: uppercase;
     font-weight: 200;
     margin: 2rem;
+    padding-top: 2rem;
 }
+
 
 .advice-section {
     height: 100vh;
@@ -54,9 +56,17 @@ body {
     height: 6rem; 
 }
 
+
+@media screen and (max-width: 700px) {
+    .advice  {
+        font-size: 1.2rem;
+    }
+  }
+
 .advice p {
     padding: 1rem;
 }
+
 
 a {
     color: var(--inkBlack);
@@ -116,9 +126,15 @@ a {
  .mainContainer {
     position: relative;
     width: 389px;
-    height: 278px;
-    
+    height: 278px;   
  }
+
+@media screen and (max-width: 700px) {
+    .mainContainer {
+        width: 252px;
+        height: 180px;  
+    }
+  }
 
  .theCard{
     position: absolute;
@@ -151,6 +167,13 @@ a {
         height: 85px;
     }
 
+    @media screen and (max-width: 700px) {
+        .theCardFront img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
     .sunDark {
         display: none;
     }
@@ -159,10 +182,6 @@ a {
         transform: rotateY(180deg);
     }
 
- .theCardBack img {
-    width: 20px;
-    height: 20px;
- }
 
  .theCardBack, .advice {
     display: flex;
@@ -174,6 +193,8 @@ a {
     transform: rotateY(180deg);
     }
 
+
+/* Dark mode styling */
 
     @media (prefers-color-scheme: dark) {
         body {
