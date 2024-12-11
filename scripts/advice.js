@@ -23,7 +23,7 @@ const getAdvice = async () => {
     setTimeout(() => {
         card.classList.toggle('isFlipped');
         button.disabled = false; 
-    }, 5000);
+    }, 4500);
 };
 
 button.addEventListener("click", function() {

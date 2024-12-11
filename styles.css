@@ -3,6 +3,7 @@
     --darkGrey: #2e2e2e;
     --warmWhite: #fef8ea; 
     --warmerWhite: #f9efd7;
+    --peachyPink: #f98ca6;
 }
 
 
@@ -27,10 +28,9 @@ body {
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center center; 
-    height: 100vh; 
+    height: 120vh; 
     color: var(--inkBlack);
 }
-
 
 .header {
     font-family: 'Great Warrior';
@@ -42,9 +42,7 @@ body {
     padding-top: 2rem;
 }
 
-
 .advice-section {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,7 +53,6 @@ body {
     text-align: center;
     height: 6rem; 
 }
-
 
 @media screen and (max-width: 700px) {
     .advice  {
@@ -193,6 +190,10 @@ a {
     transform: rotateY(180deg);
     }
 
+
+.bottom-link {
+    margin-bottom: 2rem;
+}
 
 /* Dark mode styling */
 
