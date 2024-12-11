@@ -1,0 +1,52 @@
+.header {
+    font-family: 'Great Warrior';
+    font-size: clamp(35px, 6vw, 90px);
+}
+
+.form-container {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+    .form-container  {
+        font-size: 1.2rem;
+    }
+  }
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    background-color: transparent;
+    height: 40px;
+    width: 65px;
+    background: transparent;
+    border: 1px solid var(--inkBlack);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 18px;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid var(--peachyPink); /* Changes border color */
+}
+
+@media (prefers-color-scheme: dark) {
+    input:focus {
+        outline: none;
+        border: 1px solid var(--warmWhite); /* Changes border color */
+    }
+}
