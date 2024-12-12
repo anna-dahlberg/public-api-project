@@ -9,12 +9,12 @@
 
 @font-face {
     font-family: 'Great Warrior' ;
-    src: url(/assets/fonts/great_warrior/great_warrior.ttf);
+    src: url(assets/fonts/great_warrior/great_warrior.ttf);
 }
 
 @font-face {
     font-family: 'Antic Didones';
-    src: url(/assets/fonts/antic_didone/antic_didone_regular.ttf);
+    src: url(assets/fonts/antic_didone/antic_didone_regular.ttf);
 }
 
 * {
