@@ -1,17 +1,21 @@
+html {
+    font-size: 10px;
+}
+
 .header {
     font-family: 'Great Warrior';
-    font-size: clamp(35px, 6vw, 90px);
+    font-size: clamp(3.5rem, 6vw, 9rem);
 }
 
 .form-container {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     font-weight: bold;
-    margin-top: 2rem;
+    margin-top: 3.2rem;
 }
 
 @media screen and (max-width: 700px) {
     .form-container  {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
   }
 
@@ -23,14 +27,14 @@ form {
 
 input {
     background-color: transparent;
-    height: 40px;
-    width: 65px;
+    height: 4rem;
+    width: 6.5rem;
     background: transparent;
-    border: 1px solid var(--inkBlack);
-    font-size: 1.5rem;
+    border: 0.1rem solid var(--inkBlack);
+    font-size: 2.4rem;
     font-weight: bold;
     text-align: center;
-    border-radius: 18px;
+    border-radius: 1.8rem;
 }
 
 input[type="number"]::-webkit-inner-spin-button, 
@@ -41,12 +45,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input:focus {
     outline: none;
-    border: 1px solid var(--peachyPink); /* Changes border color */
+    border: 0.1rem solid var(--peachyPink); /* Changes border color */
 }
 
 @media (prefers-color-scheme: dark) {
     input:focus {
         outline: none;
-        border: 1px solid var(--warmWhite); /* Changes border color */
+        border: 0.1rem solid var(--warmWhite); /* Changes border color */
     }
 }

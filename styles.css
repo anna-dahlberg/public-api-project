@@ -21,6 +21,10 @@
     font-family: 'Antic Didones';
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -34,12 +38,12 @@ body {
 
 .header {
     font-family: 'Great Warrior';
-    font-size: clamp(35px, 6vw, 90px);
+    font-size: clamp(3.5rem, 6vw, 9rem);
     text-align: center;
     text-transform: uppercase;
     font-weight: 200;
-    margin: 2rem;
-    padding-top: 2rem;
+    margin: 3.2rem;
+    padding-top: 3.2rem;
 }
 
 .advice-section {
@@ -49,19 +53,19 @@ body {
 }
 
 .advice {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     text-align: center;
-    height: 6rem; 
+    height: 9.6rem; 
 }
 
 @media screen and (max-width: 700px) {
     .advice  {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
   }
 
 .advice p {
-    padding: 1rem;
+    padding: 1.6rem;
 }
 
 
@@ -77,17 +81,17 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 160px;
+    height: 5rem;
+    width: 16rem;
     background: transparent;
-    border: 1px solid var(--inkBlack);
-    font-size: 20px;
+    border: 0.1rem solid var(--inkBlack);
+    font-size: 2rem;
     color: var(--inkBlack);
-    letter-spacing: 1.5px;
+    letter-spacing: 0.15rem;
     text-decoration: none;
     transition: all 200ms ease-in-out;
-    border-radius: 25px;
-    margin: 2rem;
+    border-radius: 2.5rem;
+    margin: 3.2rem;
     cursor: pointer;
 }
 
@@ -96,15 +100,15 @@ a {
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 1px solid var(--inkBlack);
+    border: 0.1rem solid var(--inkBlack);
     transition: all 200ms ease-in-out;
     opacity: 0;
-    border-radius: 36px;
+    border-radius: 3.6rem;
   }
 
   .advice-button:hover::before {
-    width: calc(100% + 12px);
-    height: calc(100% + 12px);
+    width: calc(100% + 1.2rem);
+    height: calc(100% + 1.2rem);
     opacity: 1;
   }
 
@@ -122,14 +126,14 @@ a {
 
  .mainContainer {
     position: relative;
-    width: 389px;
-    height: 278px;   
+    width: 38.9rem;
+    height: 27.8rem;   
  }
 
 @media screen and (max-width: 700px) {
     .mainContainer {
-        width: 252px;
-        height: 180px;  
+        width: 25.2rem;
+        height: 18rem;  
     }
   }
 
@@ -147,8 +151,8 @@ a {
      width: 100%;
      height: 100%;
      background-color: var(--warmWhite);
-     border: 1px solid var(--inkBlack);
-     border-radius: 20px;
+     border: 0.1rem solid var(--inkBlack);
+     border-radius: 2rem;
      color: var(--inkBlack);
      backface-visibility: hidden;
     }
@@ -160,14 +164,14 @@ a {
     }
 
     .theCardFront img {
-        width: 85px; 
-        height: 85px;
+        width: 8.5rem; 
+        height: 8.5rem;
     }
 
     @media screen and (max-width: 700px) {
         .theCardFront img {
-            width: 50px;
-            height: 50px;
+            width: 5rem;
+            height: 5rem;
         }
     }
 
@@ -192,7 +196,7 @@ a {
 
 
 .bottom-link {
-    margin-bottom: 2rem;
+    margin-bottom: 3.2rem;
 }
 
 /* Dark mode styling */
@@ -204,7 +208,7 @@ a {
 
         .theCardFront, .theCardBack {
             background-color: var(--darkGrey);
-            border: 1px solid var(--darkGrey);
+            border: 0.1rem solid var(--darkGrey);
         }
 
         .sunDark {
@@ -221,7 +225,7 @@ a {
         }
 
         .advice-button {
-            border: 1.5px solid var(--inkBlack);
+            border: 0.15rem solid var(--inkBlack);
             font-weight: 600;
         }
 
