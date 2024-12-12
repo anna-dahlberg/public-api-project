@@ -71,6 +71,7 @@ body {
 
 a {
     color: var(--inkBlack);
+    font-size: 1.6rem;
 }
 
 
