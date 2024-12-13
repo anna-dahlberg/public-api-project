@@ -2,6 +2,6 @@
 
 # Public API Project - Need some advice?
 
-**Live website:** [need-some-advice.vercel.app](https://need-some-advice.vercel.app/)
+**Live website:** [anna-dahlberg.github.io/public-api-project](https://anna-dahlberg.github.io/public-api-project/)
 
 *Developed by: Anna Dahlberg*
