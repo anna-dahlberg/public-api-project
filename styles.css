@@ -58,7 +58,7 @@ body {
     height: 9.6rem; 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 70rem) {
     .advice  {
         font-size: 2rem;
     }
@@ -131,7 +131,7 @@ a {
     height: 27.8rem;   
  }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 70rem) {
     .mainContainer {
         width: 25.2rem;
         height: 18rem;  
@@ -169,7 +169,7 @@ a {
         height: 8.5rem;
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 70rem) {
         .theCardFront img {
             width: 5rem;
             height: 5rem;
